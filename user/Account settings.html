@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaBibliothéque - Mon compte</title>
+
+
+    <!---------------------------- Bootstrap ---------------------------->
+             <!----------------- Externe ----------------->              
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+             <!----------------- Interne -----------------> 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+    <!---------------------------- Icons ---------------------------->
+    <script src="https://kit.fontawesome.com/db9d9c8d3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!---------------------------- CSS Genral ---------------------------->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!---------------------------- Add your CSS files here ---------------------------->
+  <style>
+
+
+  input[type="text"]{
+    position: absolute; top: 80px; left: 4%;width: 30%;height: 50px; border: none; background-color:#00b4d8;
+    outline: none;
+  }
+  input::placeholder{
+    color:rgba(0, 0, 0, 0.466);
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+  }
+  label{position: absolute; top:  40px; left: 4%; color:black;
+  font-family: Arial, Helvetica, sans-serif;}
+  
+
+  #mailoo{
+    position: absolute;
+    top: 150px;
+  }
+  #maila{
+    position: absolute;
+    top:190px;
+    left: 4%;
+    width: 30%;
+    height: 50px;
+    border: none;
+    background-color:#00b4d8;
+    outline: none;
+  }
+  #phone{
+    position: absolute;
+     left: 40%;
+     top: 150px;
+
+  }
+  #number{
+    position:absolute;
+    left: 40%;
+    top: 190px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    background-color:#00b4d8;
+    outline: none;
+
+  }
+  #cod{
+    position: absolute;
+    top: 250px;
+
+  }
+  #code{
+    position:absolute;
+    left: 4%;
+    top: 290px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    background-color: #00b4d8;
+    outline: none;
+
+  }
+  #submit{
+    background-color:#00b4d8;
+    position: absolute;
+    top: 420px;
+    left:10%;
+    width: 30%;
+    
+    
+
+    
+  }
+  #termsCheck{
+    position: absolute;
+  top: 370px;
+  left: 4%;
+  
+
+  }
+  #last{
+    position: absolute;
+  top: 370px;
+  left: 7%;
+  }
+  #account_pics2{
+    width:150px;
+    height: 150px;
+    background-color: #00b4d8;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+  }
+  #account_pics2:hover{
+    width:160px;
+    height: 160px;
+  }
+  #BG{background: linear-gradient(-45deg, #20cdf0, #c1bdbd, #4c4ec0);}
+
+
+  </style>
+
+</head>
+<body id="BG">
+    <!---------------------------- Header ---------------------------->
+    <header style="z-index: 66;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary md-rounded px-md-5 border-bottom">
+            <div class="container-fluid">
+              <img src="../images/Logo/logo1.1.png" alt="">
+              <a class="navbar-brand col fw-bold logo" href="#">MaBiblio<span class="text-secondary fw-normal">théque</span></a>
+              <button class="navbar-toggler border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse py-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">َÀ Propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contactez-nous</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catégories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Romans</a></li>
+                      <li><a class="dropdown-item" href="#">Science-fiction et Fantastique</a></li>
+                      <li><a class="dropdown-item" href="#">Développement personnel</a></li>
+                      <li><a class="dropdown-item" href="#">Histoires et Faits réels</a></li>
+                      <li><a class="dropdown-item" href="#">Science et Technologie</a></li>
+                      <li><a class="dropdown-item" href="#">Art et Photographie</a></li>
+                      <li><a class="dropdown-item" href="#">enfants</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="account.html">Mon compte</a>
+                  </li>
+                  
+                </ul>
+                
+                <form class="d-flex">
+                  <button id="BUTTON" type="button" popovertarget="login">Login</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+
+    <!---------------------------- Content ---------------------------->
+    <main>
+      <div class="row justify-content-right m-3">
+        <h3><div class="col">  My Account </div></h3>
+      </div>
+
+      <div class="row justify-content-right m-4">
+        <h3><div class="col" style="font-family: Arial, Helvetica, sans-serif; color: azure;"> Profile Settings</div></h3>
+      </div>
+
+
+  
+      <div style="width: 70%; height: 490px; background-color:whitesmoke;position: absolute; left: 7%; z-index: 2; border-radius: 10px;">
+        <form action="">
+          
+          <label for="name" class="form-label"> First Name</label>
+          <input type="text" name="name"  placeholder="Your First name "  required>
+
+          <label for="lastname" class="form-label" style="position: absolute; left: 40%;top: 40px;">Last Name</label>
+          <input type="text" name="lastname" placeholder="Your Last Name" style="position: absolute; top: 80px; left: 40%;" required >
+
+          <label for="email" class="form-label" id="mailoo">Email</label>
+          <input type="email" name="mail" id="maila" required placeholder="Yourmail@gmail.com">
+
+          <label for="PHONE" class="form-label" id="phone">Phone N°</label>
+          <input type="tel"  id="number"  placeholder="Phone N°" pattern="[0-9]{10}" >
+
+          <label for="pass" id="cod">Password</label>
+          <input type="password" name="passcod" id="code" required placeholder="Password">
+
+          
+            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+            <label class="form-check-label" for="termsCheck" id="last">
+                I agree to the <a href="#">terms and conditions</a> of the website.
+            </label>
+            
+          <input type="submit" name="submit" id="submit" style="background-color:#00b4d8; width: 30%; height: 45px; left: 4%; border: none;">
+        </form>
+      </div>
+
+      
+      <div class="imageee text-center" style="position:absolute; left: 83%; top: 250px;">
+        <a href="myorders.html"><img src="../images/Account imgs/cargo (2).png" alt="orders" id="account_pics2"></a>
+        <br><br>
+        <h4>My Orders</h4>
+
+      </div>
+
+      <div class="imageee text-center" style="position:absolute; left: 83%; top: 470px;">
+        <a href="mybookshelf.html"><img src="../images/Account imgs/bookshelf (1).png" alt="bookshelf" id="account_pics2"></a>
+        <br><br>
+        <h4> BookShelf</h4>
+
+      
+    </div>
+    </main>
+    
+
+
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------- Footer ---------------------------->
+    <footer class="container-fluid text-center border-top pt-4 px-md-5">
+      <div class="mx-auto row px-md-5">
+        <div class="col-12 text-center d-flex">
+          <div class="logo-div py-auto mx-auto mb-3">
+            <img src="../images/Logo/logo1.1.png" alt="">
+            <a class="navbar-brand col fw-bold logo my-auto fs-4" href="#">MaBiblio<span class="fw-normal">théque</span></a>
+          </div>
+        </div>
+        <hr>
+        <div class="col-md-6 col-lg text-start">
+          <h4>Liens rapides</h4>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="about.html">À Propos</a></li>
+              <li><a href="contact.html">Contactez-nous</a></li>
+              <li><a href="account.html">Mon compte</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-6 col-lg text-start">
+          <nav>
+            <h4>Catégories</h4>
+            <ul>
+              <li><a href="">Romans</a></li>
+              <li><a href="">Science-fiction et Fantastique</a></li>
+              <li><a href="">Développement personnel</a></li>
+              <li><a href="">Histoires et Faits réels</a></li>
+              <li><a href="">Science et Technologie</a></li>
+              <li><a href="">Art et Photographie</a></li>
+              <li><a href="">Enfants</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-12 col-lg text-start">
+          <nav>
+            <h4>Contactez-nous</h4>
+            <ul>
+              <li><a href="mailto:MaBibliotheque@gmail.com"><i class="fa-solid fa-envelope"></i> MaBibliothéque@gmail.com</a></li>
+              <li><a href="tel:+212 666666666"><i class="fa-solid fa-phone"></i> +212 666666666</a></li>
+              <li id="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="mx-md-5">
+      <div>
+        <p> 2024 &copy; Copyrights | Designed by Mohamed, Alae, Nour, et Imane</p>
+      </div>
+    </footer>
+    <!----------------------------------------------------- Login ----------------------------------------------------->
+    <div popover id="login">
+      <form action="admin/dashboard.html">
+        <h3>Login</h3>
+        <input type="text" name="name" id="name" class="form-control" placeholder="username" required pattern="^admin$">
+        <input type="password" name="name" id="name" class="form-control" placeholder="password" required pattern="^admin$">
+        <input type="submit" value="Submit" class="btn btn-success">
+      </form>
+    </div>
+
+    <!---------------------------- Bootstrap ---------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaBibliothéque - Accueil</title>
+
+
+    <!---------------------------- Bootstrap ---------------------------->
+             <!----------------- Externe ----------------->              
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+             <!----------------- Interne -----------------> 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+    <!---------------------------- Icons ---------------------------->
+    <script src="https://kit.fontawesome.com/db9d9c8d3d.js" crossorigin="anonymous"></script>
+
+
+    <!---------------------------- CSS Genral ---------------------------->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!---------------------------- Add your CSS files here ---------------------------->
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body>
+    <!---------------------------- Header ---------------------------->
+    <header >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary md-rounded px-md-5 border-bottom">
+            <div class="container-fluid">
+              <img src="images/Logo/logo1.1.png" alt="">
+              <a class="navbar-brand col fw-bold logo" href="#">MaBiblio<span class="text-secondary fw-normal">théque</span></a>
+              <button class="navbar-toggler border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse py-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="user/about.html">َÀ Propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="user/contact.html">Contactez-nous</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catégories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Romans</a></li>
+                      <li><a class="dropdown-item" href="#">Science-fiction et Fantastique</a></li>
+                      <li><a class="dropdown-item" href="#">Développement personnel</a></li>
+                      <li><a class="dropdown-item" href="#">Histoires et Faits réels</a></li>
+                      <li><a class="dropdown-item" href="#">Science et Technologie</a></li>
+                      <li><a class="dropdown-item" href="#">Art et Photographie</a></li>
+                      <li><a class="dropdown-item" href="#">enfants</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="user/account.html">Mon compte</a>
+                  </li>
+                  
+                </ul>
+                
+                <form class="d-flex">
+                    <button id="BUTTON" type="button" popovertarget="login">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+
+    <!---------------------------- Content ---------------------------->
+    <main>
+      <!---------------- Banner ---------------->
+      <div id="banner"> 
+        
+        <div class="flex-div">
+          <div id="flex-1" class="text-start">
+          
+              <h1 id="titre" class="text-start">Bienvenue sur MaBibliotheque,</h1>
+              <h5 id="subtitre" class="text-start">Entrez dans un lieu où les histoires prennent vie et les idées s'envolent. Notre bibliothèque est bien plus qu'un espace, c'est un monde d'évasion et de réflexion</h5>
+            <div class="btn-g d-flex justify-content-center">
+              <button id="get-started" class="mx-auto">Get started <i class="bi bi-arrow-right"></i></button>
+              <button id="get-started" class="mx-auto">Learn more <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+          <div id="flex-3">
+            <div class="w-100 row gap-2 px-0 mb-2">
+              <div class="quote col-8 bg-dark">
+                <p id="contenue" class="text-light">Un livre est un rêve que vous tenez entre vos mains.</p>
+                <hr>
+                <p class="author text-end"><i>Neil Gaiman</i></p>
+              </div>
+              <div class="image col"></div>
+            </div>
+            <div class="w-100 row gap-2 px-0">
+              <div class="image col"></div>
+              <div class="quote col-8 bg-info">
+                <p id="contenue" class="text-light">Chaque livre que vous ouvrez est une porte vers un monde nouveau.</p>
+                <hr>
+                <p class="author text-end text-light"><i>sentiment populaire</i></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      <!---------------- Why us ---------------->
+      <div id="pourquoi-nous" class="d-flex flex-column align-items-center justify-content-center mt-4 block">
+        <h1 id="titre" class="text-center">Pourquoi nous</h1>
+        <div class="cards d-flex mx-5 px-md-5">
+          <div class="crd rounded p-3">
+            <div class="icon">
+              <div class="fs-6" id="titre"><i class="bi bi-truck"></i> Livraison Gratuite</div>
+              <hr>
+            </div>
+            <p id="subtitre">Profitez d’une livraison sans frais directement chez vous. Nous veillons à ce que vos livres préférés arrivent rapidement et en toute sécurité, sans coût supplémentaire.</p>
+            
+          </div>
+          <div class="crd rounded p-3">
+            <div class="icon">
+              <div class="fs-6" id="titre"><i class="bi bi-file-earmark-pdf"></i> Téléchargement de PDF</div>
+              <hr>
+            </div>
+            <p id="subtitre">Accédez instantanément à une variété de livres numériques au format PDF. Parcourez, téléchargez et commencez à lire où que vous soyez, à tout moment.</p>
+            
+          </div>
+          <div class="crd rounded p-3">
+            <div class="icon">
+              <div class="fs-6" id="titre"><i class="bi bi-people"></i> 20 Partenaires de Confiance</div>
+              <hr>
+            </div>
+            <p id="subtitre">Avec 20 partenaires réputés, nous vous offrons une large collection de livres de qualité provenant des meilleurs éditeurs et auteurs du monde entier.</p>
+            
+          </div>
+          <div class="crd rounded p-3">
+            <div class="icon">
+              <div class="fs-6" id="titre"><i class="bi bi-stars"></i> Collections de Haute Qualité</div>
+              <hr>
+            </div>
+            <p id="subtitre">Nous sommes fiers de proposer uniquement des livres bien sélectionnés et de grande qualité. Chaque ouvrage que nous proposons répond aux normes les plus élevées en matière de contenu et de durabilité.</p>
+            
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <!------------------------------------------ Packs ------------------------------------------>
+      <div id="Packs" class="row container mx-auto">
+        <h1 class="text-center py-3" id="titre">Chose your pack</h1>
+        <div id="pack" class="me-2 col-md col-12">
+          <div class="info" id="contenu">
+            <p class="p-title">Pack Découverte</p>
+            <p class="desc">Gratuit ou d'entrée de gamme.</p>
+            <div class="price">15 € <sup>/an</sup></div>
+            <hr class="bg-light">
+            <div class="offer"><i class="fa-solid fa-check"></i> 1 réservation gratuite par mois</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Accès limité aux livres populaires et à une sélection de genres</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Recommandations manuelles basées sur des catégories de livres</div>
+          </div>
+          <button>Submit</button>
+        </div>
+        <div id="pack" class="me-2 col-md col-12">
+          <div class="info" id="contenu">
+            <p class="p-title">Pack Standard</p>
+            <p class="desc">Pour les utilisateurs réguliers.</p>
+            <div class="price">80 € <sup>/an</sup></div>
+            <hr class="bg-light">
+            <div class="offer"><i class="fa-solid fa-check"></i> 3 réservations par mois</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Accès à tous les genres de livres disponibles sur le site</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Notifications sur les nouveaux livres dans leurs genres préférés</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Accès à des livres exclusifs ou à des précommandes pour les nouveautés</div>
+          </div>
+          <button>Submit</button>
+        </div>
+        <div id="pack" class="me-2 col-md col-12">
+          <div class="info" id="contenu">
+            <p class="p-title">Pack Premium Plus</p>
+            <p class="desc">Avec ID personnelle et carte électronique.</p>
+            <div class="price">180 € <sup>/an</sup></div>
+            <hr class="bg-light">
+            <div class="offer"><i class="fa-solid fa-check"></i> <strong>ID personnelle unique :</strong> Suivi personnalisé de l’historique d’emprunts, recommandations et
+              préférences.</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> <strong>Carte électronique (QR code) :</strong> Accès rapide et simplifié à ses informations de compte et à
+              ses réservations.</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> 7 réservations par mois</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Accès prioritaire aux livres populaires et aux nouveautés</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Invitations à des événements ou clubs de lecture en ligne</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> <b>Support client</b> premium avec réponse rapide
+            </div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Notification automatique lorsqu’un livre rare devient disponible</div>
+            <div class="offer"><i class="fa-solid fa-check"></i> Possibilité d’emprunter des livres en avance pour une durée prolongée</div>
+            
+          </div>
+          <button>Submit</button>
+        </div>
+        
+      </div>
+      <hr>
+      <!---------------- About ---------------->
+      <div id="about" class="container px-md-5">
+        <div class="title-abt d-flex align-items-center justify-content-between">
+          <h1 id="titre">À propos de nous</h1>
+          <i class="bi bi-arrow-right fs-2"></i>
+        </div>
+        <hr>
+        <div id="content" class="row">
+          <div id="about-img" class="rounded col-12 col-md-6">
+            <div class="w-100 rounded h-100"></div>
+            <img src="images/General images/books-5211309_1280.jpg" alt="error" class="w-100 rounded h-100">
+          </div>
+          <div id="contenue" class="col-12 col-md-6 mt-2 mt-md-0">
+            <h3 id="titre">Bienvenue sur Mabibliotheque</h3>
+            <p id="subtitre">Une plateforme qui simplifie l’accès aux livres dans les bibliothèques locales.</p>
+            <div>
+              <h5 id="titre">Notre Mission</h5>
+              <p id="subtitre">Rendre la lecture et l’emprunt de livres accessibles pour tous.</p>
+            </div>
+            <div>
+              <h5 id="titre">Ce qui nous distingue</h5>
+              <p id="subtitre">Une interface intuitive et des partenariats avec plus de 20 bibliothèques au Maroc.</p>
+            </div>
+            <button id="BUTTON"><a href="user/about.html">Read more <i class="bi bi-arrow-right ms-2"></i></a></button>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
+      <!--------------------------- Books --------------------------->
+      <div id="books-div" class="w-100 text-center container-md px-md-5">
+        <div class="title-abt d-flex align-items-center justify-content-between">
+          <h1 id="titre">Recomanded books</h1>
+          <i class="bi bi-arrow-right fs-2"></i>
+        </div>
+        <hr>
+        <div id="books-slide" class="row justify-content-center">
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/art-sans-art.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/Harry\ Potter\ à\ l\'école\ des\ sorciers.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/images.jpeg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/L\'Art\ de\ la\ photographie.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/Le\ Journal\ d\'Anne\ Frank.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/Le\ Seigneur\ des\ Anneaux\ de\ J.R.R.\ Tolkien.webp) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/Le\ Petit\ Prince.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/les-7-habitudes-de-ceux-qui-réussissent-.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/Les\ Misérables\ book\ cover.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/LUnivers-a-portee-de-main.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/réfléchissez-et-devenez-riche.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="book text-start col-md-3 col-8 col-lg-2" style="background: url(images/books/une-breve-46-du-temps.jpg) no-repeat center; background-size: cover;">
+            <div class="book-info">
+              <h5 class="">Book title</h5>
+              <p><i>by Author</i></p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Reserver</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <hr>
+      <!---------------- Team ---------------->
+      <div id="team" class="container px-md-5">
+        <div class="title-abt d-flex align-items-center justify-content-between">
+          <h1 id="titre">Notre team</h1>
+          <i class="bi bi-arrow-right fs-2"></i>
+        </div>
+        <hr>
+        <div id="content" >
+          <div class="crd rounded px-0">
+            <div class="info p-2">
+              <p class="name display-6 fs-4 py-1 my-1" >Name </p>
+              <p id="subtitre">Lorem lorem</p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Linkedin Profile</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="crd rounded px-0">
+            <div class="info p-2">
+              <p class="name display-6 fs-4 py-1 my-1" >Name </p>
+              <p id="subtitre">Lorem lorem</p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Linkedin Profile</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="crd rounded px-0">
+            <div class="info p-2">
+              <p class="name display-6 fs-4 py-1 my-1" >Name </p>
+              <p id="subtitre">Lorem lorem</p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Linkedin Profile</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="crd rounded px-0">
+            <div class="info p-2">
+              <p class="name display-6 fs-4 py-1 my-1" >Name </p>
+              <p id="subtitre">Lorem lorem</p>
+              <div class="linked d-flex align-items-center justify-content-between">
+                <a href="" class="text-decoration-none text-black">Linkedin Profile</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
+      <!-------------------------------------- Reviews -------------------------------------->
+      <div id="reviews" class="container-fluid">
+        <h1 id="titre" class="text-center">ce que disent nos clients</h1>
+        <div id="review-card">
+          <div class="crd rounded p-3">
+            <p id="contenue">Une plateforme intuitive et pratique ! J'ai pu réserver mes livres en quelques clics. Un vrai gain de temps!</p>
+            <div>
+              <p class="text-end m-0 p-0"><i class="fa-solid fa-quote-right"></i></p>
+              <hr>
+              <div class="client">
+                <div class="fs-6 d-flex flex-column ms-2">
+                  <div ><i>– Lucie B.</i></div>
+                  <div><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crd rounded p-3">
+            <p id="contenue">Mabibliotheque rend l’accès à la lecture tellement plus facile ! J'adore découvrir les nouveautés sans avoir à me déplacer.</p>
+            <div>
+              <p class="text-end m-0 p-0"><i class="fa-solid fa-quote-right"></i></p>
+              <hr>
+              <div class="client">
+                <div class="fs-6 d-flex flex-column ms-2">
+                  <div ><i>– Amine K.</i></div>
+                  <div><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crd rounded p-3">
+            <p id="contenue">Grâce à Mabibliotheque, je peux réserver des livres pour mes enfants et leur donner le goût de la lecture. Excellente initiative !</p>
+            <div>
+              <p class="text-end m-0 p-0"><i class="fa-solid fa-quote-right"></i></p>
+              <hr>
+              <div class="client">
+                <div class="fs-6 d-flex flex-column ms-2">
+                  <div ><i>– Sofia L.</i></div>
+                  <div><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i><i class="bi bi-star-fill fs-6"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!------------------------- Subscribe ------------------------------>
+      
+
+    </main>
+    <div id="subscribe" class="w-100 text-center d-flex flex-column justify-content-center align-items-center">
+      <h1 id="titre">Subscribe</h1>
+      <p id="contenue" class="w-50">Inscrivez-vous pour rester informé des dernières nouveautés et accéder facilement à notre catalogue de livres !</p>
+      <form action="" class="w-50 d-flex">
+        <input type="email" name="email" id="email" placeholder="Entrez votre email..." class="form-control" >
+        <input type="button" value="Submit" class="btn btn-primary px-4">
+      </form>
+    </div>
+
+
+
+
+
+    <!---------------------------- Footer ---------------------------->
+    <footer class="container-fluid text-center border-top pt-4 px-md-5">
+      <div class="mx-auto row px-md-5">
+        <div class="col-12 text-center d-flex">
+          <div class="logo-div py-auto mx-auto mb-3">
+            <img src="images/Logo/logo1.1.png" alt="">
+            <a class="navbar-brand col fw-bold logo my-auto fs-4" href="#">MaBiblio<span class="fw-normal">théque</span></a>
+          </div>
+        </div>
+        <hr>
+        <div class="col-md-6 col-lg text-start">
+          <h4>Liens rapides</h4>
+          <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="user/about.html">À Propos</a></li>
+              <li><a href="user/contact.html">Contactez-nous</a></li>
+              <li><a href="user/account.html">Mon compte</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-6 col-lg text-start">
+          <nav>
+            <h4>Catégories</h4>
+            <ul>
+              <li><a href="">Romans</a></li>
+              <li><a href="">Science-fiction et Fantastique</a></li>
+              <li><a href="">Développement personnel</a></li>
+              <li><a href="">Histoires et Faits réels</a></li>
+              <li><a href="">Science et Technologie</a></li>
+              <li><a href="">Art et Photographie</a></li>
+              <li><a href="">Enfants</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-12 col-lg text-start">
+          <nav>
+            <h4>Contactez-nous</h4>
+            <ul>
+              <li><a href="mailto:MaBibliotheque@gmail.com"><i class="fa-solid fa-envelope"></i> MaBibliothéque@gmail.com</a></li>
+              <li><a href="tel:+212 666666666"><i class="fa-solid fa-phone"></i> +212 666666666</a></li>
+              <li id="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="mx-md-5">
+      <div>
+        <p> 2024 &copy; Copyrights | Designed by Mohamed, Alae, Nour, et Imane</p>
+      </div>
+    </footer>
+    <!----------------------------------------------------- Login ----------------------------------------------------->
+    <div popover id="login">
+      <form action="admin/dashboard.html">
+        <h3>Login</h3>
+        <input type="text" name="name" id="name" class="form-control" placeholder="username" required pattern="^admin$">
+        <input type="password" name="name" id="name" class="form-control" placeholder="password" required pattern="^admin$">
+        <input type="submit" value="Submit" class="btn btn-success">
+      </form>
+    </div>
+
+    <!---------------------------- Bootstrap ---------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

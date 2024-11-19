@@ -1,0 +1,82 @@
+/* pour les titres */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+#titre{
+    color: #03045e;
+    font-family: "Hubot Sans", serif;;
+    font-weight: 400;   
+}
+#subtitre{
+    color: #6b6b6b; ;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+#contenue{
+    color:black ;
+    font-family:"Roboto", serif;
+    font-weight: 400;
+}
+/* pour les titres */
+
+
+
+
+/*  FOR BUTTONS */
+#BUTTON{
+    padding: 5px 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    background-color:#00b4d8;
+    color: white;
+    text-align: center;
+    border-radius:6px ;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+#BUTTON:hover{
+    padding: 5px 20px;
+    width: fit-content;
+    background-color:white;
+    color:#00b4d8;
+    border-radius:6px ;
+    text-align: center;
+    border: solid #00b4d8 2px;
+    transform: scale(1);
+    cursor: pointer;
+}
+#BUTTON2{
+    padding: 5px 20px;
+    width: fit-content;
+    background-color:white;
+    color:#00b4d8;
+    border-radius:6px ;
+    text-align: center;
+    border: solid #00b4d8 2px;
+    cursor: pointer;
+}
+/*  FOR BUTTONS */
+
+
+/* pour les packs */
+
+
+#pack{
+    background-color: #00b4d8;
+    color: white;
+    font-family: "Roboto", serif;
+    width: x;
+    height:x;
+    border-radius: 15px;
+    text-align: left;
+    padding:10px;
+    
+}
+/* pour les packs */
+
+/* CHECK MARK*/
+.fa-check{
+    color: lightgreen;
+    margin-right: 5px;
+}
+/* CHECK MARK*/

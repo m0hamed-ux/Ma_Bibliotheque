@@ -1,0 +1,447 @@
+header{
+    z-index: 300;
+}
+/* -------------container1-------------- */
+#container1 img{
+    width: 100%;
+    height: 480px;
+}
+#Bienvenue{
+    width: 45%;
+    position: absolute;
+    bottom: 220px;
+    left: 45px;
+}
+#contenue1{
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+@font-face {
+    font-family: hubot;
+    src: url(../css/fonts/Hubot-Sans.ttf);
+}
+#Bienvenue #title{
+    font-size: 3.5em;
+   font-family: hubot;
+   font-weight: 600;
+   color: #03045e;
+}
+/* -------------container2-------------- */
+#mission{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+#container2,#container3,#container4,#container8{
+    margin-top: 30px;
+}
+#content1{
+    width: 50%;
+    font-size: 1.5em;
+    padding: 30px;
+}
+#mission img{
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+    margin: 20px;
+}
+#content1 #titre{
+    border-left: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+}
+/* -------------container3-------------- */
+#container3,#container4,#container6,#container7,#container9{
+    margin: 30px;
+}
+#histoire{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#content2{
+    width: 50%;
+    font-size: 1.5em;
+    /* padding: 30px; */
+}
+#histoire img{
+    width: 130%;
+    height: 350px;
+    border-radius: 16px;
+    margin: 10px;
+}
+#content2 #titre{
+    border-right: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    justify-self: end;
+}
+/* -------------scroll-------------- */
+.block{
+    position: relative;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes scroll {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+/* -------------container4-------------- */
+#citation1{
+    text-align: center;
+}
+#container4{
+    color: #5e5d5d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 1.8em;
+    border-left: 7px solid #00b4d8;
+}
+/* -------------container5-------------- */
+#content4 #titre{
+    border-left: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+}
+#content4{
+    width: 50%;
+    font-size: 1.5em;
+    padding: 30px;
+}
+#content4 #contenue{
+    padding-left: 50px;
+    line-height: 80px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+#équipe{
+    display: flex;
+}
+.row{
+    margin-right: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 120%;
+    height: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e282a;
+    margin: 0 0 7px 0;
+}
+.post{
+    display: block;
+    font-size: 15px;
+    color: #17bebb;
+    margin-bottom: 15px;
+}
+.social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.social li a{
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #17bebb;
+    border: 1px solid #17bebb;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+/* -------------container6-------------- */ 
+#valeurs{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#content5{
+    width: 35%;
+    font-size: 1.5em;
+    /* padding: 30px; */
+}
+#valeurs img{
+    width: 130%;
+    height: 350px;
+    border-radius: 16px;
+    margin: 10px;
+}
+#content5 #titre{
+    border-right: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    justify-self: end;
+}
+/* -------------container7-------------- */ 
+#citation2{
+    text-align: center;
+}
+#container7{
+    color: #5e5d5d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 1.8em;
+    border-left: 7px solid #00b4d8;
+}
+/* -------------container8-------------- */
+#distingue{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+#content6{
+    width: 50%;
+    font-size: 1.5em;
+    padding: 30px;
+}
+#distingue img{
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+    margin: 20px;
+}
+#content6 #titre{
+    border-left: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+} 
+/* -------------container9-------------- */
+#Partenariat{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#content7{
+    width: 47%;
+    font-size: 1.5em;
+    /* padding: 30px; */
+}
+#Partenariat img{
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+    margin: 10px;
+}
+#content7 #titre{
+    border-right: 7px solid #00b4d8;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    justify-self: end;
+}
+/* -------------container10-------------- */
+#container10{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0 !important;
+}
+.btn:not(#login .btn){
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: roboto;
+    color:white;
+    padding: 20px 50px;
+    background-color: #00b4d8;
+     border: none;
+     cursor: pointer;
+     border-radius: 20px;
+}
+.btn:not(#login .btn):hover{
+    outline: auto;
+    color:#00b4d8;
+    background-color: white;
+}
+.btn:active{
+    color:white !important;
+    background-color: #00b4d8 !important; 
+}
+/* --------------------responsive-------------------------- */
+@media screen and (max-width: 740px) {
+    #container1 img{
+        height: 240px;
+    }
+    #contenue1{
+        margin: 0;
+        font-size: 1em;
+    }
+    #Bienvenue{
+        width: 52%;
+        font-size: 1em;
+        position: absolute;
+        bottom: 360px;
+        left: 25px;
+    }
+    #content1{
+        width: 100%;
+        font-size: 1em;
+        padding: 15px;
+    }
+    #mission img{
+        width: 108%;
+        height: 230px;
+        margin: 10px;
+    }
+    #content1 #titre{
+        margin-bottom: 5px;
+        padding-left: 10px;
+        font-size: 1.5em;
+    }
+    #content2{
+        margin-left: 20px;
+        width: 50%;
+        font-size: 1em;
+    }
+    #histoire img{
+        width: 100%;
+        height: 230px;
+    }
+    #content2 #titre{
+        margin-bottom: 5px;
+        padding-right: 10px;
+        font-size: 1.5em;
+    }
+    #container4{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    font-size: 1,5em;
+}
+#caption1{
+    margin-left: 390px;
+    width: 100%;
+}
+#content4 #titre{
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+#content4{
+    width: 100%;
+    font-size: 1.3em;
+    padding: 15px;
+}
+#content4 #contenue{
+    padding-left: 10px;
+    line-height: 50px;
+    font-size: larger;
+    display: block;
+    text-align: center;
+}
+#équipe{
+    display: flex;
+    flex-direction: column;
+}
+#content5{
+    width: 50%;
+    font-size: 1em;
+}
+#valeurs img{
+    width: 100%;
+    height: 280px;
+    margin: 5px;
+}
+#content5 #titre{
+    margin-bottom: 5px;
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+#container7{
+    padding-right: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    font-size: 1,5em;
+}
+#caption2{
+    margin-left: 320px;
+    width: 100%;
+}
+#content6{
+    width: 100%;
+    font-size: 1em;
+    padding: 15px;
+}
+#distingue img{
+    width: 105%;
+    height: 280px;
+    margin: 10px;
+}
+#content6 #titre{
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+#content7{
+    width: 100%;
+    font-size: 1em;
+}
+#Partenariat img{
+    width: 100%;
+    height: 280px;
+    margin: 5px;
+}
+#content7 #titre{
+    margin-bottom: 5px;
+    padding-right: 10px;
+    font-size: 1.5em;
+} 
+.btn:not(#login .btn){
+    padding: 7px 30px;
+} 
+#container10{
+    font-size: 1em;
+} 
+}
+

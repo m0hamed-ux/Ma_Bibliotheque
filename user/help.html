@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaBibliothéque - Mon compte - Help</title>
+
+
+    <!---------------------------- Bootstrap ---------------------------->
+             <!----------------- Externe ----------------->              
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+             <!----------------- Interne -----------------> 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+    <!---------------------------- Icons ---------------------------->
+    <script src="https://kit.fontawesome.com/db9d9c8d3d.js" crossorigin="anonymous"></script>
+
+
+    <!---------------------------- CSS Genral ---------------------------->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!---------------------------- Add your CSS files here ---------------------------->
+
+
+</head>
+<body>
+    <!---------------------------- Header ---------------------------->
+    <header >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary md-rounded px-md-5 border-bottom">
+            <div class="container-fluid">
+              <img src="../images/Logo/logo1.1.png" alt="">
+              <a class="navbar-brand col fw-bold logo" href="#">MaBiblio<span class="text-secondary fw-normal">théque</span></a>
+              <button class="navbar-toggler border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse py-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">َÀ Propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contactez-nous</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catégories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Romans</a></li>
+                      <li><a class="dropdown-item" href="#">Science-fiction et Fantastique</a></li>
+                      <li><a class="dropdown-item" href="#">Développement personnel</a></li>
+                      <li><a class="dropdown-item" href="#">Histoires et Faits réels</a></li>
+                      <li><a class="dropdown-item" href="#">Science et Technologie</a></li>
+                      <li><a class="dropdown-item" href="#">Art et Photographie</a></li>
+                      <li><a class="dropdown-item" href="#">enfants</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="account.html">Mon compte</a>
+                  </li>
+                  
+                </ul>
+                
+                <form class="d-flex">
+                    <button id="BUTTON" type="button" popovertarget="login">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!---------------------------- Content ---------------------------->
+    <main class="col-sm-12 col-lg-12 col-md-12 col-xl-12">
+        <div class="container row p-3 text-center col-sm-12 col-lg-12 col-xl-12 ">
+           <p id="titre" class="h3">Bonjour!</p>
+            <p>Comment pouvons-nous vous aider?</p>
+        </div>
+        <div class="search-box m-1">
+            <form style="border-radius: 5px; position: relative;">
+                <button type="submit" style="position: absolute;justify-content:flex-end; border-radius: 50%;cursor: pointer; border: non; background: none; font-size: 25px;">
+                    <i class="fa fa-search " aria-hidden="true"style="color:rgb(93, 94, 95)"></i></button>
+                <input type="text" name="search" id="srch" placeholder="search" class="form-control m-5" 
+                style="width: 90%;display: block; border-radius: 25px;font-size: 20px;border: none;box-shadow: 0 5px 8px 3px black;">
+            </form>
+        </div>
+        <div class="d-flex bg-body-tertiary">
+            <div class="col-lg-5 col-sm-5 col-4 ">
+                <img src="../images/General images/help.jpg" alt="" width="90%" height="350px">
+            </div>
+            <div class=" container col-sm-5 col-6 col-lg-6 col-xl-5 col-xxl-5 bg-info" >
+                <div class=" p-5 m-3">
+                    <p id="titre" class="h3" >Raccorcis</p>
+                </div>
+                    <ul>
+                        <li><a href="#Q1">J'ai perdu mon compte</a></li>
+                        <br>
+                        <li><a href="#Q2">J'ai oublié mon mot de passe</a></li>
+                        <br>
+                        <li><a href="#Q3">J'ai pas trouvé le livre que j'ai été entrain de lire</a></li>
+                    </ul>
+            </div>
+        </div>
+       
+        <br>
+        <br>
+        <div id="besoin"class="d-flex text-center  m-4 p-4">
+            <form class="d-flex container  text-center ">
+            <p id="titre" class="h3 col-sm-6 col-5 col-lg-6 col-xl-6"> Besoin de prendre contact?</p>
+            <button id="login" type="button" class="col-sm-6 col-6 col-lg-6 col-xl-6">Contactez-nous</button>
+            </form>
+        </div>
+        <br>
+        <br id="Q1">
+        <br>
+        <div id="div1" class=" m-4 p-5 ">
+            <h2 id="titre" >Mon compte a disparu.comment le récupperer?</h1>
+                <p id="contenue">Comment récupérer mon comptr?</p>
+                <ol type="1" id="contenue">
+                    <li >Cliquez sur "Account"</li>
+                    <li>Cliquer sur "se connecter"</li>
+                    <li>Entrer votre "ID"="nom d'utilisateur</li>
+                </ol>
+                <p id="contenue"><b>Si non entrer (nom,à/téléphone/email) pour réccupérer votre compte </b></p>
+        </div>
+        <br>
+        <br id="Q2">
+        <br>
+        <br >
+        <div  class="bg-info m-4 p-5">
+            <h2 id="titre">J'ai oublié mon mot de passe!</h2>
+            <p id="contenue">Comment récuperer mon mot de passe?</p>
+            <ol type="1" id="contenue">
+                <li>Cliquez sur "Account"</li>
+                <li>Cliquer sur "j'ai oublier mon mot de passe"</li>
+                <li>Entrer votre "numéro de téléphone"ou bien votre "email" pour recevez un code de réccupération.</li>
+            </ol>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br id="Q3" >
+        <div id="div2" class=" m-4 p-5">
+            <h2 id="titre" >J'ai pas trouvé le livre que j'ai été entrain de lire?</h2>
+            <p >Pour plus d'information,merci de nous contacter sur<a href="#" class="text-primary">whatsapp</a></p>
+        </div>
+        <br><br><br>
+        
+
+    </main>
+
+
+
+
+
+    <!---------------------------- Footer ---------------------------->
+    <footer class="container-fluid text-center border-top pt-4 px-md-5">
+      <div class="mx-auto row px-md-5">
+        <div class="col-12 text-center d-flex">
+          <div class="logo-div py-auto mx-auto mb-3">
+            <img src="../images/Logo/logo1.1.png" alt="">
+            <a class="navbar-brand col fw-bold logo my-auto fs-4" href="#">MaBiblio<span class="fw-normal">théque</span></a>
+          </div>
+        </div>
+        <hr>
+        <div class="col-md-6 col-lg text-start">
+          <h4>Liens rapides</h4>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="about.html">À Propos</a></li>
+              <li><a href="contact.html">Contactez-nous</a></li>
+              <li><a href="account.html">Mon compte</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-6 col-lg text-start">
+          <nav>
+            <h4>Catégories</h4>
+            <ul>
+              <li><a href="">Romans</a></li>
+              <li><a href="">Science-fiction et Fantastique</a></li>
+              <li><a href="">Développement personnel</a></li>
+              <li><a href="">Histoires et Faits réels</a></li>
+              <li><a href="">Science et Technologie</a></li>
+              <li><a href="">Art et Photographie</a></li>
+              <li><a href="">Enfants</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-12 col-lg text-start">
+          <nav>
+            <h4>Contactez-nous</h4>
+            <ul>
+              <li><a href="mailto:MaBibliotheque@gmail.com"><i class="fa-solid fa-envelope"></i> MaBibliothéque@gmail.com</a></li>
+              <li><a href="tel:+212 666666666"><i class="fa-solid fa-phone"></i> +212 666666666</a></li>
+              <li id="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="mx-md-5">
+      <div>
+        <p> 2024 &copy; Copyrights | Designed by Mohamed, Alae, Nour, et Imane</p>
+      </div>
+    </footer>
+    <!----------------------------------------------------- Login ----------------------------------------------------->
+    <div popover id="login">
+        <form action="admin/dashboard.html">
+          <h3>Login</h3>
+          <input type="text" name="name" id="name" class="form-control" placeholder="username" required pattern="^admin$">
+          <input type="password" name="name" id="name" class="form-control" placeholder="password" required pattern="^admin$">
+          <input type="submit" value="Submit" class="btn btn-success">
+        </form>
+      </div>
+
+    <!---------------------------- Bootstrap ---------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
