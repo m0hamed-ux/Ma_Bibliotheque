@@ -1,0 +1,27 @@
+#aside-header{
+    height: 100vh;
+    width: 20%;
+    border-right: 0.2px solid rgb(219, 219, 219);
+}
+nav.navbar{
+    height: 100VH;
+}
+ul, ul>li{
+    width: 100%;
+    text-align: center;
+}
+a.nav-link:not(.active){
+    color: rgb(88, 88, 88);
+    &:hover{
+        color: rgb(255, 255, 255);
+    }
+}
+a.nav-link.active{
+    color: white !important;
+}
+.nav-item.active{
+    background-color: #00B4D4
+}
+.nav-item:hover{
+    background-color: #00b4d4c3;
+}
