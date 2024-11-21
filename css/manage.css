@@ -8,7 +8,9 @@ nav.navbar{
 }
 ul, ul>li{
     width: 100%;
-    text-align: center;
+}
+ul>li{
+    padding: 0 10%;
 }
 a.nav-link:not(.active){
     color: rgb(88, 88, 88);
