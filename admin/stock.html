@@ -12,16 +12,184 @@
 </head>
 <body>
     <header id="aside-header">
-        <nav class="navbar flex-column justify-content-around">
-            <div id="logo">LOGO</div>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="" class="nav-link"><i class="bi bi-microsoft"></i> Dashboard</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i class="bi bi-people-fill"></i> Cliens</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i class="bi bi-pen-fill"></i> Add new book</a></li>
-                <li class="nav-item active"><a href="" class="nav-link active"><i class="bi bi-gear-fill"></i> Manage</a></li>
-            </ul>
-            <a href="" class="btn btn-danger">Log out</a>
+        <nav class="navbar flex-column justify-content-between align-items-start">
+            <div class="w-100">
+                <a class="navbar-brand fw-bold logo" href="#">MaBiblio<span class="text-secondary fw-normal">théque</span></a>
+                <hr>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="bi bi-microsoft"></i> <span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="clients.html" class="nav-link"><i class="bi bi-people-fill"></i> <span>Cliens</span></a></li>
+                    <li class="nav-item"><a href="add-Book.html" class="nav-link"><i class="bi bi-pen-fill"></i> <span>Add new book</span></a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link active"><i class="bi bi-gear-fill"></i> <span>Manage</span></a></li>
+                </ul>
+            </div>
+            <div class="w-100 px-2"><a href="../index.html" class="btn btn-outline-danger w-100"><i class="bi bi-box-arrow-left"></i> Log out</a></div>
         </nav>
     </header>
+    <main>
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Livres</h1>
+            <form action="" class="d-flex align-items-center">
+                <select name="filter" id="filter" class="form-select mx-1">
+                    <option value="">Dernier 7 jours</option>
+                    <option value="">Dernier 14 jours</option>
+                    <option value="">Dernier 30 jours</option>
+                    <option value="">Dernier 90 jours</option>
+                    <option value="">Costume</option>
+                </select>
+                <a class="btn btn-light mx-1 d-flex"><i class="bi bi-upload mx-1"></i><span>Export</span></a>
+                <a class="btn btn-light mx-1 d-flex"><i class="bi bi-download mx-1"></i><span>Import</span></a>
+                <a href="add-Book.html" class="btn btn-primary mx-1 d-flex"><i class="bi bi-plus mx-1"></i><span>Ajouter un livre</span></a>
+                
+
+            </form>
+        </div>
+        <div class="table-responsive-md">
+            <table class="table table-light rounded">
+                <thead>
+                    <tr>
+                        <th>ID Livre</th>
+                        <th>Cover</th>
+                        <th>Nom du livre</th>
+                        <th>Catégorie</th>
+                        <th>Stock/Quantité</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Romans -->
+                    <tr>
+                        <td>RM001</td>
+                        <td><img src="../images/books/Les Misérables book cover.jpg" alt="Les Misérables" class="rounded" width="60"></td>
+                        <td>Les Misérables</td>
+                        <td>Romans</td>
+                        <td>45</td>
+                        <td><span class="badge bg-success">Disponible</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>RM002</td>
+                        <td><img src="../images/books/LUnivers-a-portee-de-main.jpg" alt="Pride and Prejudice" class="rounded" width="60"></td>
+                        <td>Pride and Prejudice</td>
+                        <td>Romans</td>
+                        <td>32</td>
+                        <td><span class="badge bg-warning">15 Réservé</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+            
+                    <!-- Science-fiction et Fantastique -->
+                    <tr>
+                        <td>SF001</td>
+                        <td><img src="../images/books/images.jpeg" alt="Dune" class="rounded" width="60"></td>
+                        <td>Dune</td>
+                        <td>Science-fiction et Fantastique</td>
+                        <td>27</td>
+                        <td><span class="badge bg-success">Disponible</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SF002</td>
+                        <td><img src="../images/books/Le Seigneur des Anneaux de J.R.R. Tolkien.webp" alt="Le Seigneur des Anneaux" class="rounded" width="60"></td>
+                        <td>Le Seigneur des Anneaux</td>
+                        <td>Science-fiction et Fantastique</td>
+                        <td>18</td>
+                        <td><span class="badge bg-danger">Complet</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+            
+                    <!-- Développement personnel -->
+                    <tr>
+                        <td>DP001</td>
+                        <td><img src="../images/books/les-7-habitudes-de-ceux-qui-réussissent-.jpg" alt="Les 7 habitudes" class="rounded" width="60"></td>
+                        <td>Les 7 habitudes de ceux qui réalisent tout</td>
+                        <td>Développement personnel</td>
+                        <td>60</td>
+                        <td><span class="badge bg-success">Disponible</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DP002</td>
+                        <td><img src="../images/books/réfléchissez-et-devenez-riche.jpg" alt="Réfléchissez et devenez riche" class="rounded" width="60"></td>
+                        <td>Réfléchissez et devenez riche</td>
+                        <td>Développement personnel</td>
+                        <td>25</td>
+                        <td><span class="badge bg-warning">5 Réservé</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+            
+                    <!-- Enfants -->
+                    <tr>
+                        <td>EN001</td>
+                        <td><img src="../images/books/Le Petit Prince.jpg" alt="Le Petit Prince" class="rounded" width="60"></td>
+                        <td>Le Petit Prince</td>
+                        <td>Enfants</td>
+                        <td>100</td>
+                        <td><span class="badge bg-success">Disponible</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EN002</td>
+                        <td><img src="../images/books/Harry Potter à l'école des sorciers.jpg" alt="Harry Potter à l'école des sorciers" class="rounded" width="60"></td>
+                        <td>Harry Potter à l'école des sorciers</td>
+                        <td>Enfants</td>
+                        <td>50</td>
+                        <td><span class="badge bg-warning">10 Réservé</span></td>
+                        <td>
+                            <i class="bi bi-pencil-fill btn btn-outline-info"></i>
+                            <i class="bi bi-trash-fill btn btn-outline-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <nav class="w-100 text-center mb-5 mb-md-0">
+            <ul class="pagination w-100 justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">20</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </main>
 </body>
-</html>
+</html

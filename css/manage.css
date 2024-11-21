@@ -1,15 +1,38 @@
+@font-face {
+    font-family: logo;
+    src: url(fonts/Raker.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+body{
+    display: flex;
+}
+header>nav.navbar .logo{
+    font-family: logo;
+}
 #aside-header{
     height: 100vh;
     width: 20%;
+    z-index: 5;
     border-right: 0.2px solid rgb(219, 219, 219);
+    position: fixed;
+}
+main{
+    margin-left: 20%;
+    width: 80%;
+    min-height: 100vh;
+    padding: 1%;
+    background-color: #d1d1d1c3;
 }
 nav.navbar{
     height: 100VH;
 }
-ul, ul>li{
+header ul, header ul>li{
     width: 100%;
 }
-ul>li{
+header ul>li, .logo{
     padding: 0 10%;
 }
 a.nav-link:not(.active){
@@ -26,4 +49,77 @@ a.nav-link.active{
 }
 .nav-item:hover{
     background-color: #00b4d4c3;
+}
+th:nth-child(1){
+    border-radius: 10px 0px 0px 0px;
+}
+th:last-child{
+    border-radius: 0px 10px 0px 0px;
+}
+tr:last-child>td:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+tr{
+    vertical-align: middle;
+}
+td>img{
+    width: 3em;
+}
+td>nav{
+    width: min-content;
+}
+form a>span{
+    width: max-content;
+}
+
+@media screen and (max-width : 768px) {
+    #aside-header{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        padding: 10px;
+    }
+    header>nav.navbar{
+        flex-direction: row !important;
+        background-color: white;
+        height: auto;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 0;
+    }
+    header>nav.navbar ul.navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    header>nav.navbar ul.navbar-nav li{
+        flex: 1;
+        &:hover>a{
+            color: white !important;
+        }
+    }
+    header>nav.navbar a>span, header>nav.navbar .logo, header>nav.navbar hr, header>nav.navbar .btn{
+        display: none;
+    }
+
+    main{
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding: 1%;
+        background-color: #d1d1d1c3;
+    }
+    main>div, main>div>form{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    main>div>form>*{
+        margin-bottom: 5px;
+    }
+    main>div>form>a{
+        flex: 1;
+    }
 }
