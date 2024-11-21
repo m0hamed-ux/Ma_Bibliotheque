@@ -295,11 +295,36 @@
     </footer>
     <!----------------------------------------------------- Login ----------------------------------------------------->
     <div popover id="login">
-      <form action="admin/dashboard.html">
-        <h3>Login</h3>
-        <input type="text" name="name" id="name" class="form-control" placeholder="username" required pattern="^admin$">
-        <input type="password" name="name" id="name" class="form-control" placeholder="password" required pattern="^admin$">
-        <input type="submit" value="Submit" class="btn btn-success">
+      
+      <form action="../admin/dashboard.html">
+        <h3>Welcome back!</h3>
+        <label for="" class="w-75 text-center text-secondary mb-4">"Bienvenue MaBibliothèque ! Connectez-vous pour accéder à nos services et gérer vos emprunts."</label>
+        
+        <div class="d-flex w-100">
+          <a href="#" class="btn btn-light"><i class="bi bi-facebook mx-1"></i> Facebook</a>
+          <a href="#" class="btn btn-light"><i class="bi bi-google mx-1"></i>Google</a>
+        </div>
+        <label for="" class="form-label text-secondary text-center mt-3">- Or login with -</label>
+        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+        <div class="input-group mb-2 ">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="bi bi-person"> </i></div>
+          </div>
+          <input type="text" name="name" id="name" class="form-control" placeholder="username" required pattern="^admin$">
+        </div>
+        <label class="sr-only" for="inlineFormInputGroup">Mot de pass</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="bi bi-key"> </i></div>
+          </div>
+          <input type="password" name="name" id="name" class="form-control" placeholder="password" required pattern="^admin$">
+        </div>
+        <label for="" class="text-secondary">Did you forget your password? <a class="text-primary">Rest password</a></label>
+        <div class="d-flex w-100 mt-3">
+          <input type="submit" value="Login" class="btn btn-primary">
+          <a href="about.html" class="btn btn-outline-danger">Annuler</a>
+        </div>
+        
       </form>
     </div>
 
