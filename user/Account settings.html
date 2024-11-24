@@ -24,24 +24,23 @@
     <!---------------------------- CSS Genral ---------------------------->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles.css">
 
     <!---------------------------- Add your CSS files here ---------------------------->
   <style>
 
 
-  input[type="text"]{
+  input[type="text"]:not(div#login *){
     position: absolute; top: 80px; left: 4%;width: 30%;height: 50px; border: none; background-color:#00b4d8;
     outline: none;
   }
-  input::placeholder{
+  input:not(div#login *)::placeholder{
     color:rgba(0, 0, 0, 0.466);
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 
     
   }
-  label{position: absolute; top:  40px; left: 4%; color:black;
+  label:not(div[popover] *){position: absolute; top:  40px; left: 4%; color:black;
   font-family: Arial, Helvetica, sans-serif;}
   
 
