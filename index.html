@@ -57,13 +57,13 @@
                       Catégories
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Romans</a></li>
-                      <li><a class="dropdown-item" href="#">Science-fiction et Fantastique</a></li>
-                      <li><a class="dropdown-item" href="#">Développement personnel</a></li>
-                      <li><a class="dropdown-item" href="#">Histoires et Faits réels</a></li>
-                      <li><a class="dropdown-item" href="#">Science et Technologie</a></li>
-                      <li><a class="dropdown-item" href="#">Art et Photographie</a></li>
-                      <li><a class="dropdown-item" href="#">enfants</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Romans</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Science-fiction et Fantastique</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Développement personnel</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Histoires et Faits réels</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Science et Technologie</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">Art et Photographie</a></li>
+                      <li><a class="dropdown-item" href="#BooksSection">enfants</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -162,7 +162,7 @@
       </div>
       <hr>
       <!------------------------------------------ Packs ------------------------------------------>
-      <div id="Packs" class="row container mx-auto">
+      <div id="Packs" class="row container mx-auto block">
         <h1 class="text-center py-3" id="titre">Chose your pack</h1>
         <div id="pack" class="me-2 col-md col-12">
           <div class="info" id="contenu">
@@ -174,7 +174,7 @@
             <div class="offer"><i class="fa-solid fa-check"></i> Accès limité aux livres populaires et à une sélection de genres</div>
             <div class="offer"><i class="fa-solid fa-check"></i> Recommandations manuelles basées sur des catégories de livres</div>
           </div>
-          <button>Submit</button>
+          <button>Obtenez un mois d'essai gratuit</button>
         </div>
         <div id="pack" class="me-2 col-md col-12">
           <div class="info" id="contenu">
@@ -187,7 +187,7 @@
             <div class="offer"><i class="fa-solid fa-check"></i> Notifications sur les nouveaux livres dans leurs genres préférés</div>
             <div class="offer"><i class="fa-solid fa-check"></i> Accès à des livres exclusifs ou à des précommandes pour les nouveautés</div>
           </div>
-          <button>Submit</button>
+          <button>commence maintenant</button>
         </div>
         <div id="pack" class="me-2 col-md col-12">
           <div class="info" id="contenu">
@@ -208,13 +208,13 @@
             <div class="offer"><i class="fa-solid fa-check"></i> Possibilité d’emprunter des livres en avance pour une durée prolongée</div>
             
           </div>
-          <button>Submit</button>
+          <button>Contactez-nous</button>
         </div>
         
       </div>
       <hr>
       <!---------------- About ---------------->
-      <div id="about" class="container px-md-5">
+      <div id="about" class="container px-md-5 block">
         <div class="title-abt d-flex align-items-center justify-content-between">
           <h1 id="titre">À propos de nous</h1>
           <i class="bi bi-arrow-right fs-2"></i>
@@ -397,10 +397,10 @@
         </div>
       
       </div> -->
-      <div id="BooksSection">
+      <div id="BooksSection" class="block">
         <h1 id="titre" class="text-center">Livres recommandés</h1>
-        <div id="bookCateg" class="d-flex justify-content-center align-content-center px-md-5 flex-wrap">
-          <a href="" class="btn btn-danger">All</a>
+        <div id="bookCateg" class="d-flex justify-content-center gap-1 align-content-center px-md-5 flex-wrap">
+          <a href="" class="btn btn-primary">All</a>
           <a href="" class="btn btn-light">Romans</a>
           <a href="" class="btn btn-light">Science-fiction et Fantastique</a>
           <a href="" class="btn btn-light">Développement personnel</a>
@@ -535,7 +535,7 @@
       </div>
       <hr>
       <!---------------- Team ---------------->
-      <div id="team" class="container px-md-5">
+      <div id="team" class="container px-md-5 block">
         <div class="title-abt d-flex align-items-center justify-content-between">
           <h1 id="titre">Notre team</h1>
           <i class="bi bi-arrow-right fs-2"></i>
@@ -595,7 +595,7 @@
       </div>
       <hr>
       <!-------------------------------------- Reviews -------------------------------------->
-      <div id="reviews" class="container-fluid">
+      <div id="reviews" class="container-fluid block">
         <h1 id="titre" class="text-center">ce que disent nos clients</h1>
         <div id="review-card">
           <div class="crd rounded p-3">
@@ -645,7 +645,7 @@
 
     </main>
     <div id="subscribe" class="w-100 text-center d-flex flex-column justify-content-center align-items-center">
-      <h1 id="titre">Subscribe</h1>
+      <h1 id="titre">S'abonner</h1>
       <p id="contenue" class="w-50">Inscrivez-vous pour rester informé des dernières nouveautés et accéder facilement à notre catalogue de livres !</p>
       <form action="" class="w-50 d-flex">
         <input type="email" name="email" id="email" placeholder="Entrez votre email..." class="form-control" >
