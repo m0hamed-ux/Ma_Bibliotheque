@@ -597,13 +597,15 @@ div.image:nth-child(2){
     width: 100%;
     margin-top: 5px !important;
 }
-
-.block{
-    position: relative;
-    animation: scroll linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+@media screen and (min-width : 754px) {
+    .block{
+        position: relative;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
 }
+
 @keyframes scroll {
     from{
         opacity: 0;
