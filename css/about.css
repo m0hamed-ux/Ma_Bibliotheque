@@ -457,3 +457,15 @@ header{
         width: 100% !important;
     }
 }
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: end;
+    justify-items: center;
+}
