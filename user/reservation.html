@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/Logo/logo1.1.png">
+    <title>MaBibliothéque - Reservation</title>
+
+
+    <!---------------------------- Bootstrap ---------------------------->
+             <!----------------- Externe ----------------->              
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+             <!----------------- Interne -----------------> 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+    <!---------------------------- Icons ---------------------------->
+    <script src="https://kit.fontawesome.com/db9d9c8d3d.js" crossorigin="anonymous"></script>
+
+
+    <!---------------------------- CSS Genral ---------------------------->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!---------------------------- Add your CSS files here ---------------------------->
+    <style>
+        main{
+            padding: 40px !important;
+            background: url(../images/General\ images/blue.jpg) no-repeat center;
+            background-size: cover;
+        }
+        form{
+            width: 55%;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: white;
+            padding: 20px;
+        }
+        .input-group-text{
+            border-radius: 5px 0px 0px 5px !important;
+            background-color: rgb(221, 221, 221) !important;
+        }
+        @media screen and (max-width : 768px) {
+            form{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <!-- Informations utilisateur -->
+             <h2 class="text-center">Informations personell</h2>
+             <div class="mb-3">
+                <label for="fullName" class="form-label">Êtes-vous membre ? *</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="bi bi-patch-check-fill text-primary"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="Name" placeholder="Entrez votre Id " required>
+                </div>
+            </div>
+            <div class="d-flex align-items-center px-5">
+                <hr class="flex-grow-1">
+                <h4 class="text-center px-2">Ou</h4>
+                <hr class="flex-grow-1">
+            </div>
+            
+            <div class="row">
+                
+                <div class="mb-3 col-md-6">
+                  <label for="fullName" class="form-label">Prénom *</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="Name" placeholder="Entrez votre prénom " required>
+                  </div>
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="fullName" class="form-label">Nom *</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-people-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="LastName" placeholder="Entrez votre nom " required>
+                  </div>
+                  
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="email" class="form-label">Adresse e-mail *</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
+                  </div>
+                  
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="phone" class="form-label">Numéro de téléphone (facultatif)</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                        </div>
+                        <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone">
+                      </div>
+                    
+                  </div>
+                  
+            </div>
+            
+            <hr>
+            
+            <!-- Mode de récupération -->
+             <h2 class="text-center">Mode de récupération</h2>
+            <div class="mb-3">
+              <label class="form-label">Choisir un Mode de récupération *</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="pickupOrDelivery" id="pickupOption" value="pickup" checked>
+                <label class="form-check-label" for="pickupOption">
+                  Retrait à la bibliothèque
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="pickupOrDelivery" id="deliveryOption" value="delivery">
+                <label class="form-check-label" for="deliveryOption">
+                  Livraison à domicile
+                </label>
+              </div>
+              <div class="row">
+                <div class="mb-3 col-md-6">
+                  <label for="Date1" class="form-label">Date de réservation</label>
+                  <input type="date" class="form-control" id="Date1" required>
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="Date2" class="form-label">Date de retour *</label>
+                  <input type="date" class="form-control" id="Date2"  required>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <!-- Détails de livraison -->
+            <div id="deliveryDetails">
+              <h2 class="mt-3 text-center">Adresse de livraison</h2>
+              <div class="mb-3">
+                <label for="address" class="form-label">Adresse *</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-house-door-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="address" placeholder="Entrez votre adresse">
+                  </div>
+                
+              </div>
+              <div class="mb-3">
+                <label for="city" class="form-label">Ville *</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-geo-alt-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="city" placeholder="Entrez votre ville">
+                  </div>
+                
+              </div>
+              <div class="mb-3">
+                <label for="postalCode" class="form-label">Code postal *</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-mailbox2"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="postalCode" placeholder="Entrez votre code postal">
+                  </div>
+                
+              </div>
+            </div>
+            <hr>
+            <div id="pickupDetails">
+              <h2 class="mt-3 text-center">Retrait à la bibliothèque</h2>
+              <div class="mb-3">
+                <label for="branch" class="form-label">Sélectionnez une bibliothèque</label>
+                <select class="form-select" id="branch">
+                  <option value="main">Bibliothèque principale</option>
+                  <option value="branch1">Bibliothèque 2</option>
+                  <option value="branch2">Bibliothèque 3</option>
+                  <option value="branch2">Bibliothèque 4</option>
+                  <option value="branch2">Bibliothèque 5</option>
+                </select>
+              </div>
+              
+            </div>
+            <div class="d-flex justify-content-end mt-4 gap-2">
+              <a href="../index.html" class="btn btn-outline-danger">Annuler</a>
+              <button type="submit" class="btn btn-primary">Réserver</button>
+            </div>
+        </form>
+    </main>
+</body>

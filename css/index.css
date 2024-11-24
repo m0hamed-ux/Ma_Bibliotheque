@@ -614,3 +614,22 @@ div.image:nth-child(2){
         scale: 1;
     }
 }
+.textLight{
+    color: #e0e0e0;
+}
+.row.noPadding>*>*{
+    padding: 0 !important;
+}
+#BooksSection .card{
+    height: 100%;
+}
+#BooksSection .card .card-body{
+    align-content: end;
+}
+#BooksSection .card address{
+    color: #646464;
+    font-style: italic;
+    &::before{
+        content: "– ";
+    }
+}
