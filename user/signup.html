@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+    <section class="containere">
+      <header>Formulaire d'inscription</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Nom et prénom</label>
+          <input type="text" placeholder="Entrez le nom complet" required >
+        </div>
+
+        <div class="input-box">
+          <label>Adresse email</label>
+          <input type="text" placeholder="Entrez l'adresse e-mail" required >
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Numéro de téléphone</label>
+            <input type="tel" placeholder="Entrez le numéro de téléphone" required >
+          </div>
+          <div class="input-box">
+            <label>Date de naissance</label>
+            <input type="date" placeholder="Entrez la date de naissance" required >
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Genre</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked >
+              <label for="check-male">homme</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" >
+              <label for="check-female">Femme</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Adresse</label>
+          <input type="text" placeholder="Entrez l'adresse postale" required >
+          <input type="text" placeholder="Entrez l'adresse de la rue ligne 2" required >
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>pays</option>
+                <option>Maroc</option>
+                <option>spain</option>
+                <option>canada</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Entrez votre ville" required >
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Entrez votre région" required>
+            <input type="number" placeholder="Entrez le code postal" required>
+          </div>
+          <button class="btn btn-primary my-5"><a href="login.html">Soumettre</a></button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
