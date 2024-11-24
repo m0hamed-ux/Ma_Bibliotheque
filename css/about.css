@@ -61,6 +61,7 @@ header{
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
 #content2{
     width: 50%;
     font-size: 1.5em;
@@ -445,3 +446,14 @@ header{
 } 
 }
 
+@media screen and (max-width : 900px) {
+    #histoire, #mission, #valeurs, #distingue, #Partenariat{
+        flex-direction: column !important;
+    }
+    #histoire>*, #mission>*, #valeurs>*, #distingue>*, #Partenariat>*{
+        width: 100% !important;
+    }
+    #mission img, #valeurs img, #histoire img{
+        width: 100% !important;
+    }
+}
