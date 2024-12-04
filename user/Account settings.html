@@ -126,6 +126,45 @@
     height: 160px;
   }
   #BG{background: linear-gradient(-45deg, #20cdf0, #c1bdbd, #4c4ec0);}
+  @media screen and (min-width : 754px){
+    #container{
+      display: flex !important;
+      flex-direction: row !important;
+      padding: 10px;
+      width: 100%;
+
+    }
+    #container>div{
+      width: 50%;
+      
+    }
+    #flex{
+      flex-direction: column !important;
+    }
+  }
+  #div{
+    width: 95% !important;
+    height: 490px !important;
+    background-color: whitesmoke !important;
+    position: relative !important;
+    left: 0 !important;
+    z-index: 2;
+    border-radius: 10px !important;
+    margin: auto  !important;}
+  #flex{
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  #container{
+      display: flex !important;
+      flex-direction: column-reverse;
+      width: 100%;
+
+    }
+ 
 
 
   </style>
@@ -195,52 +234,48 @@
 
 
   
-      <div style="width: 70%; height: 490px; background-color:whitesmoke;position: absolute; left: 7%; z-index: 2; border-radius: 10px;">
-        <form action="">
-          
-          <label for="name" class="form-label"> First Name</label>
-          <input type="text" name="name"  placeholder="Your First name "  required>
-
-          <label for="lastname" class="form-label" style="position: absolute; left: 40%;top: 40px;">Last Name</label>
-          <input type="text" name="lastname" placeholder="Your Last Name" style="position: absolute; top: 80px; left: 40%;" required >
-
-          <label for="email" class="form-label" id="mailoo">Email</label>
-          <input type="email" name="mail" id="maila" required placeholder="Yourmail@gmail.com">
-
-          <label for="PHONE" class="form-label" id="phone">Phone N°</label>
-          <input type="tel"  id="number"  placeholder="Phone N°" pattern="[0-9]{10}" >
-
-          <label for="pass" id="cod">Password</label>
-          <input type="password" name="passcod" id="code" required placeholder="Password">
-
-          
-            <input class="form-check-input" type="checkbox" id="termsCheck" required>
-            <label class="form-check-label" for="termsCheck" id="last">
-                I agree to the <a href="#">terms and conditions</a> of the website.
-            </label>
-            
-          <input type="submit" name="submit" id="submit" style="background-color:#00b4d8; width: 30%; height: 45px; left: 4%; border: none;">
-        </form>
+      <div>
+        <div id="container">
+          <div id="div" style="width: 70%; height: 490px; background-color:whitesmoke;position: absolute; left: 7%; z-index: 2; border-radius: 10px;">
+            <form action="">
+        
+              <label for="name" class="form-label"> First Name</label>
+              <input type="text" name="name"  placeholder="Your First name "  required>
+              <label for="lastname" class="form-label" style="position: absolute; left: 40%;top: 40px;">Last Name</label>
+              <input type="text" name="lastname" placeholder="Your Last Name" style="position: absolute; top: 80px; left: 40%;" required >
+              <label for="email" class="form-label" id="mailoo">Email</label>
+              <input type="email" name="mail" id="maila" required placeholder="Yourmail@gmail.com">
+              <label for="PHONE" class="form-label" id="phone">Phone N°</label>
+              <input type="tel"  id="number"  placeholder="Phone N°" pattern="[0-9]{10}" >
+              <label for="pass" id="cod">Password</label>
+              <input type="password" name="passcod" id="code" required placeholder="Password">
+        
+                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck" id="last">
+                    I agree to the <a href="#">terms and conditions</a> of the website.
+                </label>
+        
+              <input type="submit" name="submit" id="submit" style="background-color:#00b4d8; width: 30%; height: 45px; left: 4%; border: none;">
+            </form>
+          </div>
+        
+          <div id="flex">
+            <div class="imageee text-center" >
+              <a href="myorders.html"><img src="../images/Account imgs/cargo (2).png" alt="orders" id="account_pics2"></a>
+              <br><br>
+              <h4>My Orders</h4>
+            </div>
+            <div class="imageee text-center" >
+              <a href="mybookshelf.html"><img src="../images/Account imgs/bookshelf (1).png" alt="bookshelf" id="account_pics2"></a>
+              <br><br>
+              <h4> BookShelf</h4>
+        
+                </div>
+        </div>
       </div>
-
-      
-      <div class="imageee text-center" style="position:absolute; left: 83%; top: 250px;">
-        <a href="myorders.html"><img src="../images/Account imgs/cargo (2).png" alt="orders" id="account_pics2"></a>
-        <br><br>
-        <h4>My Orders</h4>
-
       </div>
-
-      <div class="imageee text-center" style="position:absolute; left: 83%; top: 470px;">
-        <a href="mybookshelf.html"><img src="../images/Account imgs/bookshelf (1).png" alt="bookshelf" id="account_pics2"></a>
-        <br><br>
-        <h4> BookShelf</h4>
-
-      
-    </div>
     </main>
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br>
+    
     
 
 
