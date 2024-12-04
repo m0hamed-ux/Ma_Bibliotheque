@@ -22,59 +22,68 @@
 
     <!---------------------------- CSS Genral ---------------------------->
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/headerCssOnly.css">
     <link rel="stylesheet" href="../css/styles.css">
     <!---------------------------- Add your CSS files here ---------------------------->
 
     <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-    <!---------------------------- Header ---------------------------->
-    <header >
-        <nav class="navbar navbar-expand-lg bg-body-tertiary md-rounded px-md-5 border-bottom">
-            <div class="container-fluid">
-              <img src="../images/Logo/logo1.1.png" alt="">
-              <a class="navbar-brand col fw-bold logo" href="#">MaBiblio<span class="text-secondary fw-normal">théque</span></a>
-              <button class="navbar-toggler border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse py-auto" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="about.html">َÀ Propos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contactez-nous</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catégories
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Romans</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Science-fiction et Fantastique</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Développement personnel</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Histoires et Faits réels</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Science et Technologie</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">Art et Photographie</a></li>
-                      <li><a class="dropdown-item" href="../index.html#BooksSection">enfants</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="account.html">Mon compte</a>
-                  </li>
-                  
+    
+    <!---------------------------- Header With Css Only ---------------------------->
+    <div id="header">
+      <div id="nav">
+        <div id="flex">
+          <div id="logo">
+            <img src="../images/Logo/logo1.1.png" alt="">
+            <a  href="../index.html"><b>MaBiblio</b>théque</a>
+          </div>
+          <div id="icon">
+            
+            <label for="view">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            
+          </div>
+        </div>
+        <input type="checkbox" name="view" id="view">
+        <div id="menu">
+          <div id="links">
+            <ul>
+              <li>
+                <a href="../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="about.html" class="active">َÀ Propos</a>
+              </li>
+              <li>
+                <a href="contact.html">Contactez-nous</a>
+              </li>
+              <li id="dropdown-lable">
+                <input type="checkbox" name="dropdown" id="dropdown-button">
+                <label for="dropdown-button">
+                  <a>Catégories</a>
+                </label>
+                <ul id="dropdown">
+                  <li><a href="../index.html#BooksSection">Romans</a></li>
+                  <li><a href="../index.html#BooksSection">Science-fiction et Fantastique</a></li>
+                  <li><a href="../index.html#BooksSection">Développement personnel</a></li>
+                  <li><a href="../index.html#BooksSection">Histoires et Faits réels</a></li>
+                  <li><a href="../index.html#BooksSection">Science et Technologie</a></li>
+                  <li><a href="../index.html#BooksSection">Art et Photographie</a></li>
+                  <li><a href="../index.html#BooksSection">enfants</a></li>
                 </ul>
-                
-                <form class="d-flex">
-                  <button id="BUTTON" type="button" popovertarget="login">Login</button>
-              </form>
-              </div>
-            </div>
-          </nav>
-    </header>
+              </li>
+              <li>
+                <a href="account.html">Mon compte</a>
+              </li>
+          
+            </ul>
+            <button id="BUTTON" type="button" popovertarget="login">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
